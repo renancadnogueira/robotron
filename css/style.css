@@ -240,6 +240,7 @@ main {
 
 .botoes {
     position: relative;
+    z-index: 2;
     right: 5%;
     bottom: 5%;
     display: flex;

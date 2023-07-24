@@ -59,7 +59,7 @@ function atualizaEstatisticas(peca) {
     })
 }
 
-function trocaImagem() {
+function trocaImagem(cor) {
     const imagemRobo = document.querySelector('.robo');
-    imagemRobo = `../robotron/img/robo_branco.png`;
+    imagemRobo.src = `../robotron/img/robo_${cor}.png`;
 }
