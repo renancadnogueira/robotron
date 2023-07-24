@@ -56,8 +56,12 @@ function manipulaDados (operacao, controle) {
 function atualizaEstatisticas(peca) {
     console.log();
 
-    estatisticas.forEach( (elemento) => {
-        elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
+    estatisticas.forEach((elemento) => {
+        elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica];
     })
 }
 
+function trocaImagem(cor) {
+    const imagemRobo = document.querySelector('.robo');
+    imagemRobo.src = `img/Robotron 2000 - ${cor}.png`;
+}
